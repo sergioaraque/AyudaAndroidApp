@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void LanzarAyudaRapida(View view) {
+        Intent intent = new Intent(this, AyudaRapida.class);
+        startActivity(intent);
+    }
     public void Prueba(View view) {
         Intent intent = new Intent(this, Prueba.class);
         startActivity(intent);

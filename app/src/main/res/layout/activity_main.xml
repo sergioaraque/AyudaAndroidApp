@@ -27,6 +27,13 @@
             android:text="Iniciar" />
 
         <Button
+            android:id="@+id/btnAyudaRapida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ayuda Rápida"
+            android:onClick="LanzarAyudaRapida" />
+
+        <Button
             android:id="@+id/btnSalir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
