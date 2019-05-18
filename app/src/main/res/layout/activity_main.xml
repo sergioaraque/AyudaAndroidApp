@@ -36,9 +36,17 @@
             android:text="@string/ayuda_r_pida" />
 
         <Button
+            android:id="@+id/btnModuladorGlobal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="LanzarModuladorGlobal"
+            android:text="@string/voz_internacional" />
+
+        <Button
             android:id="@+id/btnSalir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
             android:onClick="CerrarAplicacion"
             android:text="@string/salir" />
     </LinearLayout>

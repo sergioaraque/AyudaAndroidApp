@@ -35,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void LanzarModuladorGlobal(View view) {
+        Intent intent = new Intent(this, ModuladorGlobal.class);
+        startActivity(intent);
+    }
+
     /**
      * Permite cerrar la aplicación directamente.
      * @param view
