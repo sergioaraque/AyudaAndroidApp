@@ -9,14 +9,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="60px"
-            android:text="Aplicación para ayudarte"
+            android:padding="60dp"
+            android:text="@string/aplicaci_n_para_ayudarte"
             android:textSize="30sp" />
 
         <Button
@@ -24,19 +26,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="Prueba"
-            android:text="Iniciar" />
+            android:text="@string/iniciar" />
 
         <Button
             android:id="@+id/btnAyudaRapida"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ayuda Rápida"
-            android:onClick="LanzarAyudaRapida" />
+            android:onClick="LanzarAyudaRapida"
+            android:text="@string/ayuda_r_pida" />
 
         <Button
             android:id="@+id/btnSalir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Salir" />
+            android:onClick="CerrarAplicacion"
+            android:text="@string/salir" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

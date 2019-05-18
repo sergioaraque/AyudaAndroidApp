@@ -17,13 +17,30 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * Lanza la ventana con un texto a escribir y que el dictador lo lea.
+     * @param view
+     */
     public void LanzarAyudaRapida(View view) {
         Intent intent = new Intent(this, AyudaRapida.class);
         startActivity(intent);
     }
+
+    /**
+     * Lanza los botones con funcionalidad
+     * @param view
+     */
     public void Prueba(View view) {
         Intent intent = new Intent(this, Prueba.class);
         startActivity(intent);
+    }
+
+    /**
+     * Permite cerrar la aplicación directamente.
+     * @param view
+     */
+    public void CerrarAplicacion(View view) {
+        System.exit(0);
     }
 }
 
