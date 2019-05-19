@@ -15,9 +15,10 @@ import java.util.Locale;
 public class ModuladorGlobal extends AppCompatActivity implements TextToSpeech.OnInitListener  {
 
     private TextToSpeech tts;
-    private Button btnCargarModulador;
+    private Button btnCargarModulador, btnReproducir;
     private TextView tvResultadoCarga;
     private RadioButton rbEsp, rbEng;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class ModuladorGlobal extends AppCompatActivity implements TextToSpeech.O
         tts = new TextToSpeech(this,this);
         btnCargarModulador = (Button) findViewById(R.id.btnCargarModulador);
         tvResultadoCarga = (TextView) findViewById(R.id.tvResultado);
+        btnReproducir = (Button) findViewById(R.id.btnReproducir);
     }
 
 
@@ -55,6 +57,13 @@ public class ModuladorGlobal extends AppCompatActivity implements TextToSpeech.O
 
             tts.speak(defaultMessage, TextToSpeech.QUEUE_FLUSH, null);
         }
+    }
+
+    public void ReproducirFrase(View view) {
+
+        TextView tvMessage = (TextView) findViewById(R.id.etTexto);
+        String message = tvMessage.getText().toString();
+        tts.speak(message, TextToSpeech.QUEUE_FLUSH, null);
     }
 
     @Override
