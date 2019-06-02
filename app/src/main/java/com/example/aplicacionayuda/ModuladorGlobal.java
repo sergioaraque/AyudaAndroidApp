@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ public class ModuladorGlobal extends AppCompatActivity implements TextToSpeech.O
     private Button btnCargarModulador, btnReproducir;
     private TextView tvResultadoCarga;
     private RadioButton rbEsp, rbEng;
+    private LinearLayout linearLayReproducir;
 
 
     @Override
@@ -30,6 +32,7 @@ public class ModuladorGlobal extends AppCompatActivity implements TextToSpeech.O
         btnCargarModulador = (Button) findViewById(R.id.btnCargarModulador);
         tvResultadoCarga = (TextView) findViewById(R.id.tvResultado);
         btnReproducir = (Button) findViewById(R.id.btnReproducir);
+        linearLayReproducir = (LinearLayout) findViewById(R.id.linearLayReproducir);
     }
 
 
@@ -53,8 +56,7 @@ public class ModuladorGlobal extends AppCompatActivity implements TextToSpeech.O
         } else {
             tvResultadoCarga.setTextColor(Color.GREEN);
             tvResultadoCarga.setText("Modulador cargado correctamente");
-
-
+            linearLayReproducir.setVisibility(View.VISIBLE);
             tts.speak(defaultMessage, TextToSpeech.QUEUE_FLUSH, null);
         }
     }

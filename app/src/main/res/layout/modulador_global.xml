@@ -9,7 +9,7 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Seleccione un idioma"
+        android:text="@string/seleccione_un_idioma"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -22,14 +22,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Español" />
+            android:text="@string/espa_ol" />
 
         <RadioButton
             android:id="@+id/rbEng"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Inglés" />
+            android:text="@string/ingl_s" />
 
     </RadioGroup>
 
@@ -38,12 +38,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="CargarModulador"
-        android:text="Cargar Idioma" />
+        android:text="@string/cargar_idioma" />
 
     <LinearLayout
+        android:id="@+id/linearLayReproducir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="invisible">
 
         <TextView
             android:id="@+id/tvResultado"
@@ -66,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="ReproducirFrase"
-            android:text="Reproducir" />
+            android:text="@string/reproducir" />
     </LinearLayout>
 
 </LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Help App</string>
+    <string name="aplicaci_n_para_ayudarte">Aplication for help you</string>
+    <string name="ayuda_r_pida">Quick Help</string>
+    <string name="voz_internacional">International Voice</string>
+    <string name="seleccione_un_idioma">Choose a language</string>
+    <string name="salir">Exit</string>
+    <string name="reproducir">Run</string>
+    <string name="iniciar">Start</string>
+    <string name="ingl_s">English</string>
+    <string name="espa_ol">Spanish</string>
+    <string name="cargar_idioma">Load Language</string>
+</resources>
