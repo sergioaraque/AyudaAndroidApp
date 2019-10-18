@@ -7,3 +7,4 @@ Esta aplicación consistirá en:
   - Zona donde almacenar datos de utilidad al usuario (DNI, número de teléfono, contactos de emergencia...) (TODO).
   - Elegir idioma.
   
+Actual: Pruebas para lanzar una versión BETA.
